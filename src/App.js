@@ -1,105 +1,131 @@
-import logo from './logo.svg';
 import './App.css';
 
 const me = [
   {
-    nombre: "José",
-    edad: "32 años",
-    pelicula: "Chappie",
-    music: "Rap"
+    componente: 0,
+    Titulo: "Mis datos",
+    dato1: "José",
+    dato2: "32 años",
+    dato3: "Chappie",
+    dato4: "Rap"
   },
   {
-    hobbie1: "Guitarra",
-    hobbie2: "Patinar",
-    hobbie3: "Béisbol",
-    hobbie4: "Warzone"
+    componente: 1,
+    Titulo: "Mis hobbies",
+    dato1: "Guitarra",
+    dato2: "Patinar",
+    dato3: "Béisbol",
+    dato4: "Videojuegos"
   },
   {
-    ft1: "Comer",
-    ft2: "Dormir",
-    ft3: "Leer",
-    ft4: "Cubo rubik"
+    componente: 2,
+    Titulo: "Tiempo libre",
+    dato1: "Comer",
+    dato2: "Dormir",
+    dato3: "Leer",
+    dato4: "Cubo rubik"
+  },
+  {
+    componente: 3,
+    Titulo: "Mi comida favorita",
+    dato1: "Ensalada de Atún",
+    dato2: "Hamburguesa",
+    dato3: "Pizza",
+    dato4: "Tortas de cochinita"
+  },
+  {    
+    componente: 4,
+    Titulo: "Mi stack",
+    dato1: "HTML",
+    dato2: "CSS",
+    dato3: "JavaScript",
+    dato4: "React"
   }
-]
+];
 
-const Datos = () => {
+const Me = () => {
   return (
-    <div className="App">
+    <div className="Me text">
+      <h2>{me[0].Titulo}</h2>
       <ul>
-        <li><b>Nombre:</b> {me[0].nombre}</li>
-        <li><b>Edad:</b> {me[0].edad}</li>
-        <li><b>Película favorita:</b> {me[0].pelicula}</li>
-        <li><b>Música favorita:</b> {me[0].music}</li>
+        <li><b>Nombre:</b> {me[0].dato1}</li>
+        <li><b>Edad:</b> {me[0].dato2}</li>
+        <li><b>Película favorita:</b> {me[0].dato3}</li>
+        <li><b>Música favorita:</b> {me[0].dato4}</li>
       </ul>
   </div>
-  )
+  );
 }
 
 const Hobbies = () => {
   return (
-    <div className="App">
-      <h2 className='tittle' >Mis hobbies</h2>
+    <div className="Hobbies text">
+      <h2>{me[1].Titulo}</h2>
       <ul>
-        <li>{me[1].hobbie1}</li>
-        <li>{me[1].hobbie2}</li>
-        <li>{me[1].hobbie3}</li>
-        <li>{me[1].hobbie4}</li>
+        <li>{me[1].dato1}</li>
+        <li>{me[1].dato2}</li>
+        <li>{me[1].dato3}</li>
+        <li>{me[1].dato4}</li>
       </ul>
   </div>
-  )
+  );
 }
 
-const Tiempolibre = () => {
+const Freetime = () => {
   return (
-    <div className="App">
-      <h2 className='tittle' >Tiempo libre</h2>
+    <div className="Freetime text">
+      <h2>{me[2].Titulo}</h2>
       <ul>
-        <li>{me[2].ft1}</li>
-        <li>{me[2].ft2}</li>
-        <li>{me[2].ft3}</li>
-        <li>{me[2].ft4}</li>
+        <li>{me[2].dato1}</li>
+        <li>{me[2].dato2}</li>
+        <li>{me[2].dato3}</li>
+        <li>{me[2].dato4}</li>
       </ul>
   </div>
-  )
+  );
 }
 
-const Comida = () => {
+const Food = () => {
   return (
-    <div className="App">
-      <h2 className='tittle' >Mis hobbies</h2>
+    <div className="Food text">
+      <h2>{me[3].Titulo}</h2>
       <ul>
-        <li>{me[1].hobbie1}</li>
-        <li>{me[1].hobbie2}</li>
-        <li>{me[1].hobbie3}</li>
-        <li>{me[1].hobbie4}</li>
+        <li>{me[3].dato1}</li>
+        <li>{me[3].dato2}</li>
+        <li>{me[3].dato3}</li>
+        <li>{me[3].dato4}</li>
       </ul>
   </div>
-  )
+  );
 }
 
 const Stack = () => {
   return (
-    <div className="App">
-      <h2 className='tittle' >Mis hobbies</h2>
+    <div className="Stack text">
+      <h2>{me[4].Titulo}</h2>
       <ul>
-        <li>{me[1].hobbie1}</li>
-        <li>{me[1].hobbie2}</li>
-        <li>{me[1].hobbie3}</li>
-        <li>{me[1].hobbie4}</li>
+        <li>{me[4].dato1}</li>
+        <li>{me[4].dato2}</li>
+        <li>{me[4].dato3}</li>
+        <li>{me[4].dato4}</li>
       </ul>
   </div>
-  )
+  );
 }
 
 function App() {
 
   return (
-    <div className='division' >
-      <Datos/>
-      <Hobbies/>
-      <Tiempolibre/>
+    <div className='contenedor'>
+      <div className='division'>
+        <Me/>
+        <Hobbies/>
+        <Freetime/>
+        <Food/>
+        <Stack/>
+      </div>
     </div>
-  )
+  );
 }
 
 export default App;
