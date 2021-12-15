@@ -1,21 +1,4 @@
-.Me {
-  background: #b49fdc;
-}
-
-.Hobbies {
-  background: #c5ebfe;
-}
-.Freetime {
-  background: #fefd97;
-}
-.Food {
-  background: #a5f8ce;
-}
-.Stack {
-  background: #fec9a7;
-}
-
-.text {
+.card {
   color: #000;
   text-align: left;
   border-radius: 20px;
@@ -35,7 +18,7 @@
   margin-top: 50px;
 }
 
-h2 {
+h3 {
   text-align: center;
 }
 
